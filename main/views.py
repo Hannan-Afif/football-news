@@ -8,8 +8,8 @@ def show_main(request):
     news_list = News.objects.all()
 
     context = {
-        'npm' : '240123456',
-        'name': 'Haru Urara',
+        'npm' : '2406350394',
+        'name': 'Hannan Afif Darmawan',
         'class': 'PBP A',
         'news_list': news_list
     }
@@ -67,4 +67,3 @@ def show_json_by_id(request, news_id):
        return HttpResponse(json_data, content_type="application/json")
    except News.DoesNotExist:
        return HttpResponse(status=404)
-    
